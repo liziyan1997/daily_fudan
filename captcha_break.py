@@ -14,7 +14,7 @@ def base64_api(uname, pwd, img, typeid):
 
 def reportError(id):
     data = {"id": id}
-    result = json.loads(requests.post("http://api.kuaishibie.cn/reporterror.json", json=data).text)
+    result = json.loads(requests.post("http://api.ttshitu.com/reporterror.json", json=data).text)
     if result['success']:
         return "报错成功"
     else:
